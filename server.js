@@ -9,10 +9,10 @@ const clientId = process.env.CANVA_CLIENT_ID;
 const clientSecret = process.env.CANVA_CLIENT_SECRET;
 const redirectUri = process.env.REDIRECT_URI;
 
-// Servindo arquivos estáticos da pasta 'public'
+// Servir arquivos estáticos da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota principal
+// Rota principal - Servir o 'index.html' na rota '/'
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
