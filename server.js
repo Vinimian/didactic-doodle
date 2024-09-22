@@ -52,3 +52,8 @@ app.get('/callback', async (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
 });
+
+app.get('/callback', (req, res) => {
+    console.log('Rota /callback acessada');
+    res.send('Rota /callback acessada com sucesso!');
+});
