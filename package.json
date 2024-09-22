@@ -1,0 +1,14 @@
+{
+  "name": "teste-eta-peach",
+  "version": "1.0.0",
+  "description": "Projeto para testar a API do Canva",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
+}
